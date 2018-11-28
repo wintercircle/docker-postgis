@@ -9,3 +9,12 @@ pipeline:
     dockerfile: 9.6-2.5/Dockerfile
     when:
       event: push
+  docker-alpine:
+    image: plugins/docker
+    secrets: [ docker_username, docker_password ]
+    repo: wintercircle/postgis
+    context: 9.6-2.5/alpine/
+    tags: 9.6-alpine
+    dockerfile: 9.6-2.5/alpine/Dockerfile
+    when:
+      event: push
