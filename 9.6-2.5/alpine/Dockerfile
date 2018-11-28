@@ -1,5 +1,4 @@
-FROM postgres:9.6-alpine
-MAINTAINER Régis Belson <me@regisbelson.fr>
+FROM wintercircle/postgres:9.6-alpine
 
 ENV POSTGIS_VERSION 2.5.1
 ENV POSTGIS_SHA256 d380e9ec0aeee87c5d976b9111ea11199ba875f2cd496c49b4141db29cee9557
