@@ -1,4 +1,5 @@
-FROM wintercircle/postgres:9.6
+FROM postgres:9.6
+MAINTAINER Mike Dillon <mike@appropriate.io>
 
 ENV POSTGIS_MAJOR 2.5
 ENV POSTGIS_VERSION 2.5.1+dfsg-1.pgdg90+1
